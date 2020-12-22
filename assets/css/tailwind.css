@@ -1,0 +1,16 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-primaryBlue;
+  }
+  h2 {
+    @apply text-primaryBlue;
+  }
+  section {
+    @apply py-5;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

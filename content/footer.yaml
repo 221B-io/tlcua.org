@@ -1,0 +1,14 @@
+links:
+  - text: About
+    hash: about
+  - text: Members
+    hash: members
+  - text: Teams
+    hash: teams
+    children:
+      - text: Steering Committee
+        hash: steering
+      - text: Negotiating Team
+        hash: negotiating
+      - text: Communications Team
+        hash: communications
