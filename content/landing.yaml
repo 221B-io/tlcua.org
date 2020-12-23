@@ -194,16 +194,19 @@ people:
   - first: Ian
     last: Knabe
     headshot: knabe.jpg
+    title: Head of Research Materials Procurement, University of Houston
     teams:
       - neg
   - first: Asheley
     last: Landrum
     headshot: landrum.jpg
+    title: Assistant Professor, College of Media & Communication, Texas Tech University
     teams:
       - neg
   - first: Vagheesh
     last: Narasimhan
     headshot: narasimhan.jpg
+    title: Assistant Professor, Department of Integrative Biology, Department of Statistics and Data Sciences, University of Texas Austin
     teams:
       - neg
   - first: Jeffrey
@@ -216,11 +219,12 @@ people:
   - first: Chuck
     last: Weaver
     headshot: weaver.jpg
-    teams:
+    teams: Department Chair and Professor of Psychology and Neuroscience, Baylor University
       - neg
   - first: Ginger
     last: Williams
     headshot: williams.jpg
+    title: Head Acquisitions Administrative Librarian, Texas State University
     teams:
       - neg
   - first: Julie
