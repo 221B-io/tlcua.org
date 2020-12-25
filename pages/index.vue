@@ -19,7 +19,12 @@ export default {
   components: { Team, FollowUs, Metrics, About, Members},
   data () {
     return {
+      people: []
     }
+  },
+  async fetch() {
+    const data = await this.$content('people').fetch()
+    this.people = data.body
   },
   async asyncData({ $content }) {
     const landingData = await $content('landing').fetch()

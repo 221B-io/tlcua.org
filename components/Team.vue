@@ -59,12 +59,26 @@ export default {
     }
   },
   mounted () {
-    const teamsSorted = {}
-    _.forEach(this.teams, (team) => {
-      teamsSorted[team.display] = _.sortBy(_.filter(this.people, { teams: [team.short] }), person => {
-        return person.last
-      })
-    })
+    const teamsSorted = _.reduce(this.teams, (output, team) => {
+      output[team.display] = _.sortBy(
+        _.filter(
+          this.people,
+          (person) => {
+            console.log(person)
+            const teamList = _.map(_.split(person.teams, ','), _.trim)
+            console.log(teamList)
+            console.log(teamList, team.short, _.has(teamList, team.short))
+            return teamList.includes(team.short)
+            // { teams: [team.short] }
+          }
+        ),
+        person => {
+          return person.last
+        }
+      )
+      return output
+    }, {})
+
     this.teamsSorted = Object.freeze(teamsSorted)
     this.active = "Steering Committee"
   },
