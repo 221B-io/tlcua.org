@@ -37,7 +37,7 @@
                 :src="require(`~/static/undefined.svg`)"
               />
               <div class="flex-grow">
-                <h2 class="text-gray-900 title-font font-medium">{{ person.first }} {{ person.last }}</h2>
+                <h2 class="text-gray-900 title-font font-medium">{{ person.first }}&nbsp;{{ person.last }}</h2>
                 <p class="text-gray-500">{{ person.title }}</p>
               </div>
             </div>
