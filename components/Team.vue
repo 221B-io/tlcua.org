@@ -28,7 +28,7 @@
                 alt="team"
                 class="w-24 h-24 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                 v-if="person.headshot"
-                :src="require(`~/static/${person.headshot}`)"
+                :src="`/headshots/${person.headshot}`"
               />
               <img
                 alt="team"
