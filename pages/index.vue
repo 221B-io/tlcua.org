@@ -28,7 +28,7 @@ export default {
   },
   async asyncData({ $content }) {
     const landingData = await $content('landing').fetch()
-    return landingData
+    return landingData // hero, numbers, institutions, teams
   },
   fetchOnServer: true
 }
