@@ -71,8 +71,11 @@ institutions:
   - West Texas A&M University
 teams:
   - short: steering
+    hash: steering
     display: Steering Committee
   - short: neg
+    hash: negotiating
     display: Negotiating Team
   - short: comm
+    hash: communications
     display: Communications Team

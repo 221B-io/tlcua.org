@@ -3,7 +3,7 @@
     <a id="about" /><about :title="hero.title" :text="hero.text"></about>
     <a id="numbers" /><metrics :numbers="numbers"></metrics>
     <a id="members" /><members :institutions="institutions"></members>
-    <a id="teams" /><team :teams="teams" :people="people"></team>
+    <a id="teams" /><a id="teams-steering" /><a id="teams-negotiating" /><a id="teams-communications" /><team :teams="teams" :people="people"></team>
     <a id="intouch" /><follow-us />
   </div>
 </template>

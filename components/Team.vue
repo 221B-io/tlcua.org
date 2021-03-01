@@ -9,14 +9,12 @@
         <ul class="container list-reset flex md:flex-row lg:flex-col lg:mx-0 mx-auto">
           <li
             class="container text-center lg:text-right"
-            @click="changeTeam(name, $event)"
             v-for="(team, name) in teamsSorted"
           >
-            <a 
-              href="#"
-              onclick=" "
-              v-bind:class="{ block: true, 'p-4': true, 'text-primaryBlue': active===name, 'text-primaryRed': active===name, 'font-bold': true, 'hover:text-red-300': true }">{{ name }}
-            </a>
+            <NuxtLink
+              :to="{ path: '/', hash: `#teams-${name}` }"
+              v-bind:class="{ block: true, 'p-4': true, 'text-primaryBlue': active===name, 'text-primaryRed': active===name, 'font-bold': true, 'hover:text-red-300': true }"
+            >{{ hashToDisplay[name] }}</NuxtLink>
           </li>
         </ul>
       </div>
@@ -55,19 +53,23 @@ export default {
   data () {
     return {
       active: null,
-      teamsSorted: null
+      teamsSorted: null,
+      hashToDisplay: {}
+    }
+  },
+  watch: {
+    $route (to, fro) {
+      this.checkHashForTeam()
     }
   },
   mounted () {
     const teamsSorted = _.reduce(this.teams, (output, team) => {
-      output[team.display] = _.sortBy(
+      this.hashToDisplay[team.hash] = team.display
+      output[team.hash] = _.sortBy(
         _.filter(
           this.people,
           (person) => {
-            console.log(person)
             const teamList = _.map(_.split(person.teams, ','), _.trim)
-            console.log(teamList)
-            console.log(teamList, team.short, _.has(teamList, team.short))
             return teamList.includes(team.short)
             // { teams: [team.short] }
           }
@@ -80,14 +82,20 @@ export default {
     }, {})
 
     this.teamsSorted = Object.freeze(teamsSorted)
-    this.active = "Steering Committee"
+    this.checkHashForTeam()
   },
   methods: {
-    changeTeam (name, event) {
-      this.active = name
-      if (event) {
-        event.preventDefault()
+    checkHashForTeam() {
+      if (location.hash === '#teams-negotiating') {
+        this.changeTeam('negotiating')
+      } else if (location.hash === '#teams-communications') {
+        this.changeTeam('communications')
+      } else {
+        this.changeTeam('steering')
       }
+    },
+    changeTeam (hash, event) {
+      this.active = hash
     }
   }
 }
