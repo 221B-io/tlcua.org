@@ -1,8 +1,8 @@
 first,last,title,headshot,teams
 Mark,Allan,"Assistant Director of Research and Instruction Services, Angelo State University",allan.jpg,steering
-Marilyn,Myers,"Interim Dean of Libraries, University of Houston",myers.png,steering-e
+Marilyn,Myers,"Associate Dean for Special Libraries & Preservation, University of Houston",myers.png,steering-e
 David,Carlson,"Former Dean of Libraries, Texas A&M University",carlson.jpg,"steering-e,comm-e,neg-e"
-Lisa,Beinhoff,"Managing Director of Libraries, Texas Tech Health Science Center – El Paso",,steering
+Lisa,Beinhoff,"Managing Director of Libraries, Texas Tech Health Science Center – El Paso",,"steering,comm"
 Marina,Oliver,"Associate Librarian, Texas Tech University – Lubbock",,steering
 Sara,Lowman,"Vice Provost and University Librarian, Rice University",lowman.jpg,"steering,neg"
 Cherie,Hohertz,"Former Dean of University Libraries, University of Dallas",hohertz.jpg,"steering-e,comm-e"
@@ -14,7 +14,7 @@ Joan,Heath,"Former Associate Vice President and University Librarian, Texas Stat
 Vivienne,McClendon,"Executive Director of Libraries, University of Houston – Clear Lake",mcclendon.jpg,steering
 Jeffry,Archer,"Dean of University Libraries, Baylor University",archer.png,steering
 Lisa,Braysen,"Assistant Director, Library Planning and Assessment, University of Houston-Downtown",braysen.jpg,steering
-Alexia,Thompson-Young,"Assistant Director of Scholary Resources, University of Texas Austin representing UT System",thompson-young.jpg,"steering,neg"
+Alexia,Thompson-Young,"Assistant Director of Scholary Resources, University of Texas Austin representing UT System",thompson-young.jpg,"steering,neg,comm"
 Lorraine,Haricombe,"Vice Provost and Director, Univerisity of Texas Austin",harricombe.jpg,steering
 Ellen,Safley,"Senior Associate Director, University of Texas at Dallas",,steering
 Deborah,Hathaway,"Acquisitions and Collection Development Librarian, University of Dallas",hathaway.jpg,neg
@@ -35,3 +35,6 @@ Lisa,German,"Dean of Libraries, The University of Houston",,steering-e
 Diane,Bruxvoort,"Dean of University Libraries, The University of North Texas",,steering
 Daniel,Burgard,"University Librarian and Vice Provost for Scholarly Information Management, The University of North Texas Health Science Center",burgard.png,steering
 Rebecca,Bichel,"Dean of Libraries, The University of Texas at Arlington",,steering
+Jane,Scott,"UT Southwestern Medical",,comm
+Trina,Nolen,"Lamar University",,comm
+Pru,Morris,"Texas A&M University-San Antonio",,comm
