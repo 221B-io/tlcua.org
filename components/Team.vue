@@ -113,6 +113,8 @@ export default {
         }
         // console.log(_.map(_.split(person.teams, ','), (x) => _.trim(_.split(x, '-')[0])))
       }
+      output[team.hash]['active'] = _.sortBy(output[team.hash]['active'], person => { return person.last });
+      output[team.hash]['emeritus'] = _.sortBy(output[team.hash]['emeritus'], person => { return person.last });
       return output;
       // output[team.hash] =  _.reduce(this.teams, (output, team) => {
       //   _.sortBy(
