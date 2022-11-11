@@ -13,6 +13,7 @@
         <NuxtLink class="mr-5 hover:text-primaryBlue" :to="{ path: '/', hash:'#members' }">Members</NuxtLink>
         <NuxtLink class="mr-5 hover:text-primaryBlue" :to="{ path: '/', hash:'#teams' }">Teams</NuxtLink>
         <NuxtLink class="mr-5 hover:text-primaryBlue" :to="{ path: '/', hash:'#intouch' }">Stay In Touch</NuxtLink>
+        <NuxtLink class="mr-5 hover:text-primaryBlue" :to="{ path: '/news', hash:'' }">News</NuxtLink>
       </nav>
     </div>
   </header>
