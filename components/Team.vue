@@ -144,8 +144,10 @@ export default {
         this.changeTeam('negotiating')
       } else if (location.hash === '#teams-communications') {
         this.changeTeam('communications')
-      } else {
+      } else if (location.hash === '#teams-steering') {
         this.changeTeam('steering')
+      } else {
+        this.changeTeam('negotiating')
       }
     },
     changeTeam (hash, event) {
