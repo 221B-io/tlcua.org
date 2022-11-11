@@ -1,16 +1,16 @@
 hero:
   title: 43 Universities Across Texas
-  text: >-   
-    have come together under a common set of principles to think creatively about 
-    access to faculty publications and the sustainability of journal 
-    subscriptions. The Texas Library Coalition for United Action (TLCUA) has 
-    organized to identify the best way to change current models and the 
-    relationships between academic institutions and publishers. Our goals are 
-    ambitious – improved access to scholarship, greater control over faculty 
-    content, and pricing models that are sustainable for strained library budgets 
-    in higher education. TLCUA has begun its mission by entering into dialog with 
-    academic publisher Elsevier. We hope that through positive engagement and 
-    mutual understanding, an improved and sustainable model for the dissemination 
+  text: >-
+    have come together under a common set of principles to think creatively about
+    access to faculty publications and the sustainability of journal
+    subscriptions. The Texas Library Coalition for United Action (TLCUA) has
+    organized to identify the best way to change current models and the
+    relationships between academic institutions and publishers. Our goals are
+    ambitious – improved access to scholarship, greater control over faculty
+    content, and pricing models that are sustainable for strained library budgets
+    in higher education. TLCUA has begun its mission by entering into dialog with
+    academic publisher Elsevier. We hope that through positive engagement and
+    mutual understanding, an improved and sustainable model for the dissemination
     of scholarship can be achieved.
 numbers:
     - text: Institutions
@@ -27,6 +27,7 @@ numbers:
       icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>'
 institutions:
   - Angelo State University
+  - Baylor Health Sciences Library
   - Baylor University
   - Lamar University
   - Prairie View A&M University
