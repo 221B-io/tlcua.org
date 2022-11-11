@@ -20,9 +20,32 @@
       </div>
       <div class="lg:col-span-6 md:col-span-2 sm:col-span-0">
         <div class="container grid lg:grid-cols-3 md:grid-cols-2 s:grid-cols-1">
-          <div class="p-2" v-for="person in teamsSorted[active]">
+          <div class="p-2" v-for="person in teamsSorted[active]['active']">
             <div class="h-full flex items-center p-4 rounded-lg">
-              <img 
+              <img
+                alt="team"
+                class="w-24 h-24 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                v-if="person.headshot"
+                :src="`/headshots/${person.headshot}`"
+              />
+              <img
+                alt="team"
+                class="w-24 h-24 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                v-else
+                :src="require(`~/static/undefined.svg`)"
+              />
+              <div class="flex-grow">
+                <h2 class="text-gray-900 title-font font-medium">{{ person.first }}&nbsp;{{ person.last }}</h2>
+                <p class="text-gray-500">{{ person.title }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Emeritus</h2>
+        <div class="container grid lg:grid-cols-3 md:grid-cols-2 s:grid-cols-1">
+          <div class="p-2" v-for="person in teamsSorted[active]['emeritus']">
+            <div class="h-full flex items-center p-4 rounded-lg">
+              <img
                 alt="team"
                 class="w-24 h-24 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                 v-if="person.headshot"
@@ -65,20 +88,49 @@ export default {
   mounted () {
     const teamsSorted = _.reduce(this.teams, (output, team) => {
       this.hashToDisplay[team.hash] = team.display
-      output[team.hash] = _.sortBy(
-        _.filter(
-          this.people,
-          (person) => {
-            const teamList = _.map(_.split(person.teams, ','), _.trim)
-            return teamList.includes(team.short)
-            // { teams: [team.short] }
-          }
-        ),
-        person => {
-          return person.last
+      output[team.hash] = {
+        active: [],
+        emeritus: [],
+      };
+      for (const person of this.people) {
+        const teamList = [];
+        for (const team of _.split(person.teams, ',')) {
+          teamList.push(_.trim(team));
+          // let teamName = team;
+          // if(team.substr('-') !== -1) {
+          //   output[team.hash]['emeritus']
+          //   teamName = _.split(team, '-')[0];
+          // } else {
+          //   teamName = _.trim(team);
+          // }
+          // console.log(teamName);
         }
-      )
-      return output
+        if (teamList.includes(team.short)) {
+          output[team.hash]['active'].push(person);
+        }
+        if( teamList.includes(`${team.short}-e`)) {
+          output[team.hash]['emeritus'].push(person);
+        }
+        // console.log(_.map(_.split(person.teams, ','), (x) => _.trim(_.split(x, '-')[0])))
+      }
+      return output;
+      // output[team.hash] =  _.reduce(this.teams, (output, team) => {
+      //   _.sortBy(
+      //     _.filter(
+      //       this.people,
+      //       (person) => {
+      //         const teamList = _.map(_.split(person.teams, ','), _.trim)
+      //         return teamList.includes(team.short)
+      //         // { teams: [team.short] }
+      //       }
+      //     ),
+      //     person => {
+      //       return person.last
+      //     }
+      //   )
+      //   return output;
+      // }, {});
+      // return output;
     }, {})
 
     this.teamsSorted = Object.freeze(teamsSorted)
