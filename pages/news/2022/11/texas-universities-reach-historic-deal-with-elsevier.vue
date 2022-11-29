@@ -40,9 +40,10 @@
       Current TLCUA members are:    
     </h2>
     <ul>
-      <li>TBA</li>
-      <li>TBA</li>
-      <li>TBA</li>
+      <li
+        v-for="row in institutions" 
+        class="list-disc mx-4"
+      >{{row}}</li>
     </uL>
   </div>
 </template>
@@ -50,6 +51,10 @@
 <script lang="ts">
 export default {
   components: {},
+  async fetch() {
+    const data = await this.$content('people').fetch()
+    this.people = data.body
+  },
   data () {
     return {
       people: []
