@@ -1,8 +1,8 @@
 <template>
   <section class="text-primaryBlue body-font container px-5 pt-24 mx-auto items-top">
-    <div class="">
+    <div class="text-center">
       <h1 class="title-font font-medium text-3xl">Stay In Touch</h1>
-      <div class="container grid grid-cols-3 text-center p-8 mx-auto">
+      <div class="container grid grid-cols-2 text-center p-8 mx-auto">
         <div class="px-4 py-12">
           <a
             href="https://twitter.com/TexasLibUnited"
@@ -14,10 +14,6 @@
             />
             <p class="text-2xl">Follow us on Twitter</p>
           </a>
-        </div>
-        <div class="px-4 py-12">
-          <font-awesome-icon :icon="['fas', 'rss-square']" size="4x" />
-          <p class="text-2xl">News feed coming soon</p>
         </div>
         <div class="px-4 py-12">
           <a
