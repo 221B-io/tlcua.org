@@ -1,6 +1,6 @@
 <template>
   <section class="text-primaryBlue body-font container px-5 pt-24 mx-auto items-top">
-    <div class="text-center">
+    <div class="">
       <h1 class="title-font font-medium text-3xl">Stay In Touch</h1>
       <div class="container grid grid-cols-3 text-center p-8 mx-auto">
         <div class="px-4 py-12">
@@ -10,20 +10,20 @@
             <font-awesome-icon
               :icon="['fab', 'twitter']"
               size="4x"
-              class="text-primaryBlue  w-24 h-24"
+              class="text-primaryBlue"
             />
             <p class="text-2xl">Follow us on Twitter</p>
           </a>
         </div>
         <div class="px-4 py-12">
-          <font-awesome-icon :icon="['fas', 'rss-square']" size="4x" lass="text-primaryBlue w-24 h-24" />
+          <font-awesome-icon :icon="['fas', 'rss-square']" size="4x" />
           <p class="text-2xl">News feed coming soon</p>
         </div>
         <div class="px-4 py-12">
           <a
             href="mailto:press@221b.io"
           >
-            <font-awesome-icon :icon="['far', 'envelope']" size="4x" class="text-primaryBlue w-24 h-24" />
+            <font-awesome-icon :icon="['far', 'envelope']" size="4x" class="text-primaryBlue" />
             <p class="text-2xl">Send us an email</p>
           </a>
         </div>
