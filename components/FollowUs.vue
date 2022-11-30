@@ -1,7 +1,5 @@
 <template>
-  <section class="text-primaryBlue body-font container px-5 pt-24 mx-auto items-top">
-    <div class="">
-      <h1 class="title-font font-medium text-3xl text-center">Stay In Touch</h1>
+  <section class="text-primaryBlue body-font container px-5 mt-24 mx-auto items-top border-t">
       <div class="container grid grid-cols-2 text-center p-8 mx-auto">
         <div class="px-4 py-12">
           <a
@@ -24,7 +22,6 @@
           </a>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
