@@ -1,6 +1,6 @@
 <template>
   <section class="text-primaryBlue body-font container px-5 pt-24 mx-auto items-top">
-    <div class="text-center">
+    <div class="text-center pb-5">
       <h1 class="title-font font-medium text-3xl">Stay In Touch</h1>
       <div class="container grid grid-cols-2 text-center p-8 mx-auto">
         <div class="px-4 py-12">
