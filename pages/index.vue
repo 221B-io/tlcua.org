@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="bg-yellow-100 border-t border-b px-4 py-3" role="alert">
-      <p class="text-sm text-center">
-        <NuxtLink class="mr-5 hover:text-primaryBlue" :to="{ path: '/news/2022/11/30/texas-universities-reach-historic-deal-with-elsevier', hash:'' }">
+      <p class="text-sm text-center text-primaryBlue">
+        <NuxtLink class="mr-5" :to="{ path: '/news/2022/11/30/texas-universities-reach-historic-deal-with-elsevier', hash:'' }">
           ANNOUNCEMENT: TLCUA has reached historic deal with Elsevier
         </NuxtLink>
       </p>

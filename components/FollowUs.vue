@@ -10,7 +10,7 @@
             <font-awesome-icon
               :icon="['fab', 'twitter']"
               size="4x"
-              class="text-primaryBlue"
+              class="text-primaryBlue w-24 h-24"
             />
             <p class="text-2xl">Follow us on Twitter</p>
           </a>
@@ -19,7 +19,7 @@
           <a
             href="mailto:press@221b.io"
           >
-            <font-awesome-icon :icon="['far', 'envelope']" size="4x" class="text-primaryBlue" />
+            <font-awesome-icon :icon="['far', 'envelope']" size="4x" class="text-primaryBlue w-24 h-24" />
             <p class="text-2xl">Send us an email</p>
           </a>
         </div>
