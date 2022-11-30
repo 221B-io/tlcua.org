@@ -2,7 +2,7 @@
   <section class="text-primaryBlue body-font container px-5 pt-24 mx-auto items-top">
     <div class="">
       <h1 class="title-font font-medium text-3xl">Stay In Touch</h1>
-      <div class="container grid grid-cols-3 text-center p-8 mx-auto">
+      <div class="container grid grid-cols-2 text-center p-8 mx-auto">
         <div class="px-4 py-12">
           <a
             href="https://twitter.com/TexasLibUnited"
@@ -16,10 +16,6 @@
           </a>
         </div>
         <div class="px-4 py-12">
-          <font-awesome-icon :icon="['fas', 'rss-square']" size="4x" />
-          <p class="text-2xl">News feed coming soon</p>
-        </div>
-        <div class="px-4 py-12">
           <a
             href="mailto:press@221b.io"
           >
@@ -28,14 +24,7 @@
           </a>
         </div>
       </div>
-      <!-- <p class="text-center">
-        <strong>Press Inquiries </strong> Please <a href="mailto:press@221b.io" class="underline">email</a> TLCUA Lead Negotiator, Dr. Jeffrey Spies.
-      </p> -->
     </div>
-    <!-- <div class="lg:w-2/6 md:w-1/2 align-middle">
-      <center><NuxtLink :to="{ path: '/', hash: '#top' }"><img src="~/static/tlcua_logo.png" class="logo-footer" /></NuxtLink></center>
-      <mail-chimp />  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0
-    </div> -->
   </section>
 </template>
 
